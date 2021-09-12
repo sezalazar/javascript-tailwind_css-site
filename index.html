@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="shortcut icon" type="image/jpg" href="static/images/logo.ico" />
+    <link rel="stylesheet" href="static/tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="/static/cards.css" />
+    <link rel="stylesheet" href="/static/left_menu.css" />
+    <link rel="stylesheet" href="/static/nike.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    
+      <div id="header"></div>
+        <div class="content ">
+          <h3
+            class="
+              text-4xl
+              font-normal
+              leading-normal
+              mt-7
+              mb-2
+              text-white text-center
+              bg-blue-500
+              md:bg-opacity-20
+            "
+          >
+            Fullstack Development
+          </h3>
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src="/static/images/techs/html5-removebg-preview.png" />
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">HTML5</h2>
+                  <p class="card_text">
+                    Demo of pixel perfect pure CSS simple responsive card grid
+                    layout
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src="/static/images/techs/css3.png" />
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">CSS3</h2>
+                  <p class="card_text">
+                    Demo of pixel perfect pure CSS simple responsive card grid
+                    layout
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src="/static/images/techs/javascript.png" />
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">Javascript</h2>
+                  <p class="card_text">
+                    Demo of pixel perfect pure CSS simple responsive card grid
+                    layout
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src="/static/images/techs/angular.png" />
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">Angular</h2>
+                  <p class="card_text">
+                    Demo of pixel perfect pure CSS simple responsive card grid
+                    layout
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src="/static/images/techs/laravel.png" />
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">Laravel</h2>
+                  <p class="card_text">
+                    Demo of pixel perfect pure CSS simple responsive card grid
+                    layout
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image">
+                  <img src="/static/images/techs/python.png" />
+                </div>
+                <div class="card_content">
+                  <h2 class="card_title">Python</h2>
+                  <p class="card_text">
+                    Demo of pixel perfect pure CSS simple responsive card grid
+                    layout
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      <div id="footer"></div>
+  </body>
+</html>

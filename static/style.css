@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+body {
+  font-family: "Sora", sans-serif;
+  line-height: 1.5;
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.containerNT {
+  margin: 5px 20px 0 20px;
+}
+
+.titleNT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleNT h1 {
+  color: white;
+}
+
+.navNT {
+  display: flex;
+  justify-content: space-between;
+  /* background: green; */
+  max-height: 50px;
+}
+
+.nav__logo {
+  height: 50px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list-ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: green;
+}
+
+.nav__list-ul li {
+  padding: 10px;
+  cursor: pointer;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+
+.nav__list-ul li:hover {
+  border-bottom: 2px solid #fff;
+  padding: 12px;
+}
+
+.profile img {
+  border-radius: 50%;
+  background-color: white;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.results {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+  color: green;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th {
+  color: green;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table td {
+  background-color: green;
+  color: white;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* MEDIA */
+.media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+  /* border: 1px solid white; */
+  align-items: center;
+  background-color: rgb(38, 119, 31);
+}
+
+.media .media-card {
+  border-right: 3px solid white;
+}
+
+.card .card_image{
+  display: flex;
+  justify-content: center;
+}
+
+.card .card_image img{
+  height: auto;
+  max-height: 200px;
+}
+
+.media img,
+.media iframe {
+  height: 180px;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5%;
+  border: 1px solid white;
+}
+
+.media img:hover {
+  border: 2px solid green;
+}
+
+.media h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: green;
+  text-align: center;
+  background-color: white;
+}
+
+.media p {
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.media a,
+.media a:visited,
+.media a:active {
+  display: inline-block;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .title {
+    display: grid;
+    justify-content: center;
+    max-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .title h1 {
+    font-size: 22px;
+    margin-top: 0px;
+  }
+
+  .title h2 {
+    visibility: hidden;
+    margin: 0 5px -45px 5px;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .media {
+    grid-template-columns: repeat(1, 1fr);
+    border: 3px solid orange;
+  }
+
+  .media .media-card {
+    border-bottom: 3px solid orange;
+  }
+
+  .media h3 {
+    background-color: green;
+    color: white;
+  }
+
+  .media iframe {
+    border: 1px solid green;
+  }
+
+  table {
+    border: 3px solid orange;
+  }
+}
+
+
+/* ---------------map ------------------- */
+
+
+#map {
+	width: 80%;
+	height: 400px;
+}
