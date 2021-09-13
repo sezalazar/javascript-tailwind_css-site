@@ -1,7 +1,8 @@
 # Example page
 
 
-View page online: https://sezalazar.github.io/fullstack-python_flask-javascript-test/
+View page online: https://sezalazar.github.io/javascript-tailwind_css-site
+
 
 
 
